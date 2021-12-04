@@ -1,0 +1,26 @@
+{
+  "name": "bankbackend",
+  "version": "1.0.0",
+  "description": "This contains the configurations of banking applications as metadata and technical data. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error : no test is specified \\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikhuprasad/bankingapp.git"
+  },
+  "keywords": [
+    "banking",
+    "application"
+  ],
+  "author": "rikhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikhuprasad/bankingapp/issues"
+  },
+  "homepage": "https://github.com/rikhuprasad/bankingapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
