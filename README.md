@@ -25,7 +25,7 @@ The backend will have 3 API's as follows:
 
 **GET** applications (returns all applications)
 **GET** application (QueryParams - name?appName) (returns information about the application)
-**GET** configurationsForApplication (QueryParams - name?appName) (returns auditLogs/configuration-changes of an application)
+**GET** configurationChangesForApplication (QueryParams - name?appName) (returns auditLogs/configuration-changes of an application)
 **POST** technicalConfiguration (BodyParams - {"roles": ["role1", "role3"]})
 **POST** metadataConfiguration (BodyParams - {"owner": "user1", "configurationManager": "userY"})
 

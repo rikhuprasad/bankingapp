@@ -20,3 +20,9 @@ app.get("/application", (req, res, next) => {
     var application = utils.getApplication(applications, appName);
     res.json(application);
 });
+
+app.get("/configurationChangesForApplication", (req, res, next) => {
+    var appName = req.query.name;
+    var configurationChanges = utils.getAuditLogsForApplication(applications, appName);
+    res.json(configurationChanges);
+});

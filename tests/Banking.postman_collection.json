@@ -50,19 +50,19 @@
 			"response": []
 		},
 		{
-			"name": "configurationsForApplication",
+			"name": "configurationChangesForApplication",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/configurationsForApplication?name=app1",
+					"raw": "http://localhost:3000/configurationChangesForApplication?name=app1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"configurationsForApplication"
+						"configurationChangesForApplication"
 					],
 					"query": [
 						{
