@@ -30,5 +30,22 @@ module.exports = {
             return application['auditLogs'].length;
         }
         return 0;
+    },
+    
+    updateMetadataConfiguration: function(applications, metadataConfiguration){
+        var applicationName = metadataConfiguration['applicationName'];
+        var newConfiguration = metadataConfiguration['configuration'];
+
+        var application = this.getApplication(applications, applicationName);
+        if (application && application.length > 0) {
+            application = application.pop();
+            var metaData = {metaData: newConfiguration}
+            application.auditLogs.push(metaData);
+            Object.keys(newConfiguration).forEach(function(key){
+                application.configurations.metaData[key] = newConfiguration[key];
+            });
+            return application['auditLogs'].length;
+        }
+        return 0;
     }
 }

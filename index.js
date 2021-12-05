@@ -33,3 +33,10 @@ app.post('/technicalConfiguration', function(request, response){
     var version = utils.updateTechnicalConfiguration(applications, techConfiguration);
     response.send({"version" : version});    
 });
+
+
+app.post('/metadataConfiguration', function(request, response){
+    var metadataConfiguration = request.body;
+    var version = utils.updateMetadataConfiguration(applications, metadataConfiguration);
+    response.send({"version" : version});    
+});
