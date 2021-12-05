@@ -6,12 +6,12 @@ module.exports = {
         return {
             applications: [
                 {
-                    id: "APP1234",
+                    id: "1",
                     applicationName: "app1",
                     configurations: {
                         metaData: {
                             "owner": "user1",
-                            "configurationManager": "userY",
+                            "configurationManager": "userY"
                         },
                         technicalData: {
                             "roles": ["role1", "role3"]
@@ -26,11 +26,38 @@ module.exports = {
                         }
                         , {
                             technicalData: {
-
+                                "roles": ["role1", "role3"]
                             }
                         }
                     ]
-                }]
+                },
+                {
+                    id: "2",
+                    applicationName: "app2",
+                    configurations: {
+                        metaData: {
+                            "owner": "user2",
+                            "configurationManager": "userZ"
+                        },
+                        technicalData: {
+                            "roles": ["role1", "role2", "role3"]
+                        }
+                    },
+                    auditLogs:[
+                        {
+                            metaData: {
+                                "owner": "user2",
+                                "configurationManager": "userZ"
+                            }
+                        }
+                        , {
+                            technicalData: {
+                                "roles": ["role1", "role2", "role3"]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 };

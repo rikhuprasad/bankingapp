@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "47058539-e32f-469e-b710-b991bebd1b91",
+		"name": "Banking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "applications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/applications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "application",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/application?name=app2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"application"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "app2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configurationsForApplication",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/configurationsForApplication?name=app1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"configurationsForApplication"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "app1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "technicalConfiguration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"roles\": [\"role1\", \"role3\"]}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/technicalConfiguration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"technicalConfiguration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metadataConfiguration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"owner\": \"user1\", \"configurationManager\": \"userY\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/metadataConfiguration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"metadataConfiguration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -23,7 +23,12 @@ The audit logs done need to store the version number, because the JSON Array mai
 
 The backend will have 3 API's as follows:
 
+**GET** applications (returns all applications)
+**GET** application (QueryParams - name?appName) (returns information about the application)
+**GET** configurationsForApplication (QueryParams - name?appName) (returns auditLogs/configuration-changes of an application)
 **POST** technicalConfiguration (BodyParams - {"roles": ["role1", "role3"]})
-**POST** metadataConfiguration (BodyParams - {"owner": "user1", "configurationManager": "userY",})
-**GET** configurationsForApplication (QueryParams - application?appName) (returns auditLogs/configuration-changes of an application)
-**GET** application (QueryParams - application?appName) (returns information about the application)
+**POST** metadataConfiguration (BodyParams - {"owner": "user1", "configurationManager": "userY"})
+
+Notes:
+------
+In this application, the initial data is assumed to be the values of initialTemplate in templates.js (for demonstration purpose). The audit logs are assumed to be the initial logs that create the initial configuratations for the applications in the initialTemplate. In memory value of applications is assumed to be database value for demonstration. This could be extended further to use a file as a database or to make it more scalable using postgreSQL database. 
