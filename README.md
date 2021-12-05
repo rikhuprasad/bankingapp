@@ -23,7 +23,7 @@ The audit logs done need to store the version number, because the JSON Array mai
 
 The backend will have 3 API's as follows:
 
-POST technicalConfiguration (BodyParams - {"roles": ["role1", "role3"]})
-POST metadataConfiguration (BodyParams - {"owner": "user1", "configurationManager": "userY",})
-GET configurationsForApplication (QueryParams - application?appName) (returns auditLogs/configuration-changes of an application)
-GET application (QueryParams - application?appName) (returns information about the application)
+**POST** technicalConfiguration (BodyParams - {"roles": ["role1", "role3"]})
+**POST** metadataConfiguration (BodyParams - {"owner": "user1", "configurationManager": "userY",})
+**GET** configurationsForApplication (QueryParams - application?appName) (returns auditLogs/configuration-changes of an application)
+**GET** application (QueryParams - application?appName) (returns information about the application)
