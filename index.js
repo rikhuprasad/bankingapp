@@ -26,3 +26,10 @@ app.get("/configurationChangesForApplication", (req, res, next) => {
     var configurationChanges = utils.getAuditLogsForApplication(applications, appName);
     res.json(configurationChanges);
 });
+
+
+app.post('/technicalConfiguration', function(request, response){
+    var techConfiguration = request.body;
+    var version = utils.updateTechnicalConfiguration(applications, techConfiguration);
+    response.send({"version" : version});    
+});
