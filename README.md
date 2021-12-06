@@ -18,8 +18,9 @@ PK - Primary Key
 FK - Foreign Key
 
 
-Conceptually, the above has been realized in the JSON format for the pupose of easy processing and readability. This helps to store only the delta and keeps the application simple and functioning targetting on the goals of the tasks. Delta is stored as audits logs and the original table value is changed, to reduce less query to the database for efficiency. 
+Conceptually, the above has been realized in the JSON format for the pupose of easy processing and readability. This helps to store only the delta and keeps the application simple and functioning targetting on the goals of the tasks. Delta is stored as audits logs and the original table value is changed (updated), to reduce less query to the database for efficiency. applications[i].configurations contain the latest updated values of metadata and technical data. The datastructure in JSON format is available as initialTemplate in database\template.js (initialTemplate).
 The audit logs done need to store the version number, because the JSON Array maintains the order of the object indexes. The version is calculated based on the index position in the array. 
+
 
 The backend will have 3 API's as follows:
 
