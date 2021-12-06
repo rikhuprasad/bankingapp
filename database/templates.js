@@ -10,8 +10,8 @@ module.exports = {
                     applicationName: "app1",
                     configurations: {
                         metaData: {
-                            "owner": "user1",
-                            "configurationManager": "userY"
+                            "owner": "user_owner_name_X",
+                            "configurationManager": "user_configuration_manager_Y"
                         },
                         technicalData: {
                             "roles": ["role1", "role3"]
@@ -20,8 +20,8 @@ module.exports = {
                     auditLogs:[
                         {
                             metaData: {
-                                "owner": "user1",
-                                "configurationManager": "userY"
+                                "owner": "user_owner_name_X",
+                                "configurationManager": "user_configuration_manager_Y"
                             }
                         }
                         , {
@@ -36,8 +36,8 @@ module.exports = {
                     applicationName: "app2",
                     configurations: {
                         metaData: {
-                            "owner": "user2",
-                            "configurationManager": "userZ"
+                            "owner": "user_owner_name_A",
+                            "configurationManager": "user_configuration_manager_B"
                         },
                         technicalData: {
                             "roles": ["role1", "role2", "role3"]
@@ -46,8 +46,8 @@ module.exports = {
                     auditLogs:[
                         {
                             metaData: {
-                                "owner": "user2",
-                                "configurationManager": "userZ"
+                                "owner": "user_owner_name_A",
+                                "configurationManager": "user_configuration_manager_B"
                             }
                         }
                         , {
